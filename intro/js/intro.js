@@ -55,3 +55,52 @@ names.forEach((name) => {
 // sort - mutable
 names.sort();
 console.log(names);
+
+// map
+const namesUpper = names.map((name) => name.toUpperCase());
+console.log(namesUpper);
+
+// reduce
+const numbers = [5, 4, 7, 1, 10];
+const total = numbers.reduce((prev, curr) => prev + curr, 0);
+console.log({ total });
+
+// Programación orientada a objetos.
+// Class.
+
+class Drink {
+	constructor(name) {
+		this.name = name;
+	}
+
+	info() {
+		return `La bebida es: ${this.name}`;
+	}
+}
+
+// funcional
+function Drink2(name) {
+	this.name = name;
+	this.info = () => `La bebida es: ${this.name}`;
+}
+
+const mojito = new Drink('mojito');
+console.log(mojito.info());
+
+const sexAndTheBeach = new Drink2('sex and the beach');
+console.log(sexAndTheBeach.info());
+
+// herencia
+class Beer extends Drink {
+	constructor(name, alcohol) {
+		super(name);
+		this.alcohol = alcohol;
+	}
+
+	info() {
+		return super.info() + ` y tiene ${this.alcohol} de alcohol.`;
+	}
+}
+
+const beer = new Beer('victoria', 4.2);
+console.log(beer.info());
