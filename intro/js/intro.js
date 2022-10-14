@@ -27,3 +27,31 @@ function operation(fn, a, b) {
 
 // Ejemplo:
 operation(sum, 10, 11);
+
+// Arrow function
+const fa = () => console.log('something is done');
+
+fa();
+
+operation((a, b) => a * b, 10, 11);
+
+operation(
+	(a, b) => {
+		const c = a + b;
+		return c;
+	},
+	1,
+	2
+);
+
+// forEach - inmutable.
+const names = ['Juan', 'Pepe', 'Manolo', 'Ana'];
+// Función de orden superior.
+names.forEach((name) => {
+	// (name) => {} funcion de primer orden.
+	console.log({ name });
+});
+
+// sort - mutable
+names.sort();
+console.log(names);
