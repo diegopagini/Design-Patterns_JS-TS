@@ -1,0 +1,24 @@
+{
+	"name": "desing-patterns",
+	"version": "1.0.0",
+	"description": "Dessing Patterns",
+	"main": "index.js",
+	"scripts": {},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/diegopagini/Design-Patterns_JS-TS.git"
+	},
+	"keywords": [
+		"desing",
+		"patterns"
+	],
+	"author": "Diego Pagini",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/diegopagini/Design-Patterns_JS-TS/issues"
+	},
+	"homepage": "https://github.com/diegopagini/Design-Patterns_JS-TS#readme",
+	"dependencies": {
+		"ts-node": "^10.9.1"
+	}
+}
