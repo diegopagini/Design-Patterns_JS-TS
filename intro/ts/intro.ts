@@ -61,10 +61,18 @@ const snack = new Snack('Patatas', 5);
 
 const products: Product[] = [
 	{
-		getPrice: () => 'Beer',
 		price: 10,
+		getPrice: () => '20',
 	},
 	new Snack('patatas', 15),
 ];
 
 console.log(products);
+
+const getPrices = (items: Product[]) => {
+	for (const item of items) {
+		console.log(item.getPrice());
+	}
+};
+
+getPrices(products);
