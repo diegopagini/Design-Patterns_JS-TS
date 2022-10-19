@@ -2,4 +2,4 @@
 
 # Desing Patterns
 
-# Singleton - Strategy
+# Singleton - Strategy - Observer
