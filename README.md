@@ -2,4 +2,4 @@
 
 # Desing Patterns
 
-# Singleton - Strategy - Observer - Decorator
+# Singleton - Strategy - Observer - Decorator - Builder
